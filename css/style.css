@@ -1,0 +1,63 @@
+body{
+    background: rgb(33,100,119);
+    background: radial-gradient(circle, rgba(33,100,119,1) 0%, rgba(197,70,252,1) 95%);  
+    font-family: sans-serif;
+    color: white
+}
+.contenedor {
+    display: flex;
+    justify-content: center;
+    width: 730px;
+    margin: 100px auto 50px;
+ 
+}
+
+
+.tablero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(226, 224, 224);
+    
+}
+.tablero2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgba(128, 128, 128, 0.516);
+    align-items: center;
+    justify-content: center;  
+    width: 200px;
+    border-radius: 10px;
+
+    height:300px;
+}
+
+
+.jugadores {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.ticTac {
+    background-color: rgba(33, 95, 143, 0.278);   
+    width:  150px;
+    height: 150px;
+    border-radius: 10px;
+    border: 0px;
+    border: 1px white solid;
+    
+}
+.letra {
+    font-size: 30px;
+}
+
+.botonDerecho {
+
+        font-family: sans-serif;
+        border-radius: 5px;
+        width: 100px;
+        height: 40px;
+}
