@@ -9,7 +9,6 @@ body{
     justify-content: center;
     width: 730px;
     margin: 100px auto 50px;
- 
 }
 
 
@@ -60,4 +59,39 @@ body{
         border-radius: 5px;
         width: 100px;
         height: 40px;
+}
+
+/*inicio*/
+
+.panelPricipalinicio {
+
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.contenedorInicio {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+    background-color: #aca2a2;
+    /* width: 80%; */
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 600px;
+}
+.botonAdarleCaña{
+    font-size: 30px;
+    border-radius: 30px;
+    height: 100px;
+
+}
+
+.contenedorBotonPricipal{
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: -100px;
+    justify-content: center;
 }
