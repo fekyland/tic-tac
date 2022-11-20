@@ -110,3 +110,9 @@ let boxValue = ev.target.innerHTML
             jugador2  = event.target.value;
           }
         }
+
+        
+
+       function imprimir() {
+        window.print();
+         }

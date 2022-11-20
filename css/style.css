@@ -1,20 +1,25 @@
 body{
     font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+    margin-top: 0px;
+    scroll-margin-left: 0px;
 }
-.cuerpo {
-    display: grid;
-    justify-content: center;
-    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
-    color: aliceblue;
-    height: 100vh;
+.bannersuperio {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    background-color: black;
 }
-
+.ticTac {
+    background-color: rgba(0, 0, 0, 0);   
+    width:  100px;
+    height: 100px;
+    border: 5px rgb(0, 0, 0) solid;
+    font-size: 40px;
+}
 .contenedor {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-
-    
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -24,21 +29,139 @@ body{
     justify-content: center;
     align-items: center;
     height: fit-content;
-    
-    
-}
+}    
 .tablero2{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(4, 2, 2);
+    background-color: rgba(9, 3, 5, 0.843);
     align-items: center;
     justify-content: center;  
-    width: 200px;
-    border-radius: 10px;
-    height:300px;
+    border-radius: 5px;
+    height: 200px;
     text-align: center;
-    margin-left: 100px;
+}
+.nombre {
+        width: 100px;
+        margin-left:20px
+}
+.cuerpo {
+    display: grid;
+    justify-content: center;
+    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    color: aliceblue;
+    height: 100vh;
+    
+}
+
+@media (min-width:600px){
+    .bannersuperio{
+        font-size: 100px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+    }
+    .botonDerecho{
+        height: 100px;
+    }
+    .ticTac {
+        background-color: rgba(0, 0, 0, 0);   
+        width:  200px;
+        height: 200px;
+        border: 0px;
+        border: 5px rgb(0, 0, 0) solid;
+        font-size: 80px;
+    }
+    .contenedor {
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: auto 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
+    .tablero {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }    
+    .tablero2{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        background-color: rgba(11, 7, 8, 0.985);
+        align-items: center;
+        justify-content: center;  
+        border-radius: 5px;
+        height: 200px;
+        text-align: center;
+    }
+    .nombre{
+
+        width: 200px;
+        height: 50px;
+        margin-left: 70px;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: rgb(44, 2, 2) 20px solid;
+        }
+    
+}
+@media (min-width: 900px){
+.cuerpo {
+    display: grid;
+    justify-content: center;
+    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    font-size: 50px;
+    
+}
+.bannersuperio{
+    grid-column: 1/4;
+    text-align: center;
+    width: auto;
+    font-size: 50px;
+    
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 250px 250px 400px;
+    margin: 0px;
+}
+
+
+.tablero {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+    margin-left: 300px;
+    transform: rotate(10deg);
+    
+    
+    
+}
+.tablero2{
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(255, 255, 255, 0);
+    align-items: center;
+    justify-content: center;  
+    width: 398px;
+    border-radius: 5px;
+    height: 285px;
+    text-align: center;
+    margin-top: 164px;
+    font-size: 30px;
+    
+    
+    
+    
 }
 
 
@@ -48,12 +171,12 @@ body{
     width:  150px;
     height: 150px;
     border: 0px;
-    border: 10px rgb(109, 109, 109) solid;
-    font-size: 80px;
-
+    border: 5px rgb(0, 0, 0) solid;
+    font-size: 80px; 
     
     
 }
+
 .letra {
     font-size: 30px;
 }
@@ -62,8 +185,9 @@ body{
 
         font-family: sans-serif;
         border-radius: 5px;
-        width: 100px;
+        width: auto;
         height: 40px;
+        margin: 15px;
 }
 
 /*inicio*/
@@ -103,6 +227,8 @@ body{
 
 .nombre {
     margin: 10px;
+    margin-left: 20px;
+    width: 100px;
 
 }
 #casiUno {
@@ -138,7 +264,8 @@ body{
     border-bottom: none;
     border-right: none;
 }
+}
 
-@media screen and (max-width: 1200px) {
-    
-    }
+ 
+
+

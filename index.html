@@ -14,7 +14,7 @@
 <body>
 <div class="cuerpo">
     <div class="contenedor">
-        
+        <div class="bannersuperio">tic-tac-toe</div>
         <div class="tablero">
             <button class="ticTac" id="casiUno" onclick="playerClick(event)"></button>
             <button class="ticTac" id="casiDos" onclick="playerClick(event)"></button>
@@ -33,12 +33,12 @@
             <input type="text" class ="nombre" id="player2"name="jugador2" onchange="handleOnChange(event)" size="10idpx">
             <div>el turno de </div>
             <p id="turno"></p>
-            <div class="ganador" id="textoResultado"></div>
+            <div class="ganador" id="textoResultado">ganador</div>
             <div class="ganador" id="resultadoNombre"></div>
             <div></div>
             <div></div>
-            <button class="botonDerecho"id="imprimir">imprimir</button>
-            <button class ="botonDerecho" onclick="iniciarJuego()" id="reset">iniciar</button>
+            <div class="botonDerecho"id="imprimir" onclick="imprimir()">imprimir</div>
+            <div class ="botonDerecho" onclick="iniciarJuego()" id="reset">iniciar</div>
         </div>
     </div>
 </div>
