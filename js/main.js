@@ -16,12 +16,12 @@ const playerClick = (ev)=> {                //se inicia la funcion que inicia el
        if (boxValue == "") {                                             //primera condicion casilla vacia
           if (esJugadorX){                                              // turno primer jugador 
             document.getElementById("turno").innerHTML= jugador2      // visualizo los turnos en html                   //visualiza 
-            ticTac.innerHTML = '🍌'                                   //inserta el string en la clase tic-tac() boton
+            ticTac.innerHTML = '❌'                                   //inserta el string en la clase tic-tac() boton
             esJugadorX = false                                        //jugadorX falso condicion para el segundo turno
             console.log("turno  "  + jugador2)                        //visualiza el turno del 2 jugador
           }else {
             document.getElementById("turno").innerHTML= jugador1      //turno segundo jugador
-            ticTac.innerHTML = '🥝'
+            ticTac.innerHTML = '⭕'
             esJugadorX = true
             console.log("turno  "  + jugador1 )   
           }   
@@ -36,23 +36,23 @@ const playerClick = (ev)=> {                //se inicia la funcion que inicia el
                let boxValue8 = document.getElementById(`casiOcho`).innerHTML;
                let boxValue9 = document.getElementById(`casiNueve`).innerHTML;
     
-               let xGanador = (boxValue1 == "🍌" && boxValue2 == "🍌" && boxValue3 == "🍌") || //inserto los condicionales en un booleano
-                              (boxValue4 == "🍌" && boxValue5 == "🍌" && boxValue6 == "🍌") ||
-                              (boxValue1 == "🍌" && boxValue4 == "🍌" && boxValue7 == "🍌") ||
-                              (boxValue2 == "🍌" && boxValue5 == "🍌" && boxValue8 == "🍌") ||
-                              (boxValue3 == "🍌" && boxValue6 == "🍌" && boxValue9 == "🍌") ||
-                              (boxValue1 == "🍌" && boxValue5 == "🍌" && boxValue9 == "🍌") ||
-                              (boxValue7 == "🍌" && boxValue8 == "🍌" && boxValue9 == "🍌") ||
-                              (boxValue3 == "🍌" && boxValue5 == "🍌" && boxValue7 == "🍌")
+               let xGanador = (boxValue1 == "❌" && boxValue2 == "❌" && boxValue3 == "❌") || //inserto los condicionales en un booleano
+                              (boxValue4 == "❌" && boxValue5 == "❌" && boxValue6 == "❌") ||
+                              (boxValue1 == "❌" && boxValue4 == "❌" && boxValue7 == "❌") ||
+                              (boxValue2 == "❌" && boxValue5 == "❌" && boxValue8 == "❌") ||
+                              (boxValue3 == "❌" && boxValue6 == "❌" && boxValue9 == "❌") ||
+                              (boxValue1 == "❌" && boxValue5 == "❌" && boxValue9 == "❌") ||
+                              (boxValue7 == "❌" && boxValue8 == "❌" && boxValue9 == "❌") ||
+                              (boxValue3 == "❌" && boxValue5 == "❌" && boxValue7 == "❌")
 
-               let oGanador = (boxValue1 == "🥝" && boxValue2 == "🥝" && boxValue3 == "🥝") ||
-                              (boxValue4 == "🥝" && boxValue5 == "🥝" && boxValue6 == "🥝") || 
-                              (boxValue1 == "🥝" && boxValue4 == "🥝" && boxValue7 == "🥝") ||
-                              (boxValue2 == "🥝" && boxValue5 == "🥝" && boxValue8 == "🥝") ||
-                              (boxValue3 == "🥝" && boxValue6 == "🥝" && boxValue9 == "🥝") ||
-                              (boxValue1 == "🥝" && boxValue5 == "🥝" && boxValue9 == "🥝") ||
-                              (boxValue7 == "🥝" && boxValue8 == "🥝" && boxValue9 == "🥝") ||
-                              (boxValue3 == "🥝" && boxValue5 == "🥝" && boxValue7 == "🥝")
+               let oGanador = (boxValue1 == "⭕" && boxValue2 == "⭕" && boxValue3 == "⭕") ||
+                              (boxValue4 == "⭕" && boxValue5 == "⭕" && boxValue6 == "⭕") || 
+                              (boxValue1 == "⭕" && boxValue4 == "⭕" && boxValue7 == "⭕") ||
+                              (boxValue2 == "⭕" && boxValue5 == "⭕" && boxValue8 == "⭕") ||
+                              (boxValue3 == "⭕" && boxValue6 == "⭕" && boxValue9 == "⭕") ||
+                              (boxValue1 == "⭕" && boxValue5 == "⭕" && boxValue9 == "⭕") ||
+                              (boxValue7 == "⭕" && boxValue8 == "⭕" && boxValue9 == "⭕") ||
+                              (boxValue3 == "⭕" && boxValue5 == "⭕" && boxValue7 == "⭕")
         
     
                  let tablero = [boxValue1, boxValue2,boxValue3,

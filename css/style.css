@@ -207,6 +207,7 @@ body{
     border: 1px black solid ;
     
     
+    
 }
 .tablero2{
     grid-column: 3/4;
@@ -216,16 +217,13 @@ body{
     background-color: rgba(255, 255, 255, 0);
     align-items: center;
     justify-content: center;  
-    width: 398px;
+    width: 350px;
     border-radius: 20px  ;
-    height: 400px;
+    height: 300px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     border: 2px solid black;
     z-index: 2;
-    
-    
-    
     
 }
 
@@ -233,8 +231,8 @@ body{
 
 .ticTac {
     background-color: rgba(214, 194, 128, 0.174);   
-    width:  150px;
-    height: 150px;
+    width:  120px;
+    height: 120px;
     border: 0px;
     border: 10px rgb(0, 0, 0) solid;
     font-size: 80px; 
