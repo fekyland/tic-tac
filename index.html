@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -22,17 +26,24 @@
             <button class="ticTac" id="casiOcho" onclick="playerClick(event)"></button>
             <button class="ticTac" id="casiNueve" onclick="playerClick(event)"></button>  
         </div>
-        <div class="tablero2">
-            <section class="jugadores">
-            <div id=jug1 class="playerOne">player1</div>
-            <div id=jug2 class = "playerDos">player2</div>
-            </section>
-            <div class="ganador">ganador</div>
+        <div class="tablero2" >
+            <div class="playerOne">player1</div>
+            <input type="text" class ="nombre" id="player1"name="jugador1" onchange="handleOnChange(event)" size="10idpx">
+            <div class = "playerDos">player 2</div>
+            <input type="text" class ="nombre" id="player2"name="jugador2" onchange="handleOnChange(event)" size="10idpx">
+            <div>el turno de </div>
+            <p id="turno"></p>
+            <div class="ganador" id="textoResultado"></div>
+            <div class="ganador" id="resultadoNombre"></div>
+            <div></div>
+            <div></div>
             <button class="botonDerecho"id="imprimir">imprimir</button>
-            <button class ="botonDerecho"onclick= "finalJuego()" class="reset">jugar de nuevo</div>
+            <button class ="botonDerecho" onclick="iniciarJuego()" id="reset">iniciar</button>
         </div>
     </div>
-    </div>
+</div>
+    
     <script src="js/main.js"></script>
+    
 </body>
 </html>

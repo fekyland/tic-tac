@@ -1,14 +1,20 @@
 body{
-    background: rgb(33,100,119);
-    background: radial-gradient(circle, rgba(33,100,119,1) 0%, rgba(197,70,252,1) 95%);  
-    font-family: sans-serif;
-    color: white
+    font-family: 'Permanent Marker', cursive;
 }
+.cuerpo {
+    display: grid;
+    justify-content: center;
+    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    color: aliceblue;
+    height: 100vh;
+}
+
 .contenedor {
     display: flex;
-    justify-content: center;
-    width: 730px;
-    margin: 100px auto 50px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    
 }
 
 
@@ -17,36 +23,35 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    background-color: rgb(226, 224, 224);
+    height: fit-content;
+    
     
 }
 .tablero2{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgba(128, 128, 128, 0.516);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(4, 2, 2);
     align-items: center;
     justify-content: center;  
     width: 200px;
     border-radius: 10px;
-
     height:300px;
+    text-align: center;
+    margin-left: 100px;
 }
 
-
-.jugadores {
-    display: flex;
-    justify-content: space-between;
-}
 
 
 .ticTac {
-    background-color: rgba(33, 95, 143, 0.278);   
+    background-color: rgba(0, 0, 0, 0);   
     width:  150px;
     height: 150px;
-    border-radius: 10px;
     border: 0px;
-    border: 1px white solid;
+    border: 10px rgb(109, 109, 109) solid;
+    font-size: 80px;
+
+    
     
 }
 .letra {
@@ -64,9 +69,9 @@ body{
 /*inicio*/
 
 .panelPricipalinicio {
-
+    
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
     justify-content: center;
     align-items: center;
     height: 200px;
@@ -76,16 +81,16 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 78px;
-    background-color: #aca2a2;
-    /* width: 80%; */
-    margin-left: 10%;
-    margin-right: 10%;
     height: 600px;
+    width: 800px;
+    background-image: url(/img/wp8984729-tic-tac-toe-wallpapers.jpg);
+    border-radius: 5px;
 }
 .botonAdarleCaña{
     font-size: 30px;
     border-radius: 30px;
     height: 100px;
+    
 
 }
 
@@ -95,3 +100,45 @@ body{
     margin-top: -100px;
     justify-content: center;
 }
+
+.nombre {
+    margin: 10px;
+
+}
+#casiUno {
+    border-left: none;
+    border-top: none;
+}
+#casiDos {
+    
+    border-top: none;
+}
+#casiTres {
+    border-right: none;
+    border-top: none;
+}
+#casiCuatro {
+    border-left: none;
+    
+}
+
+#casiSeis {
+    border-right: none;
+    
+}
+#casiSiete {
+    border-left: none;
+    border-bottom: none;
+}
+#casiOcho {
+    
+    border-bottom: none;
+}
+#casiNueve{
+    border-bottom: none;
+    border-right: none;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    }
