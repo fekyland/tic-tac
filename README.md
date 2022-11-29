@@ -9,3 +9,9 @@ recuerda esa simpleza de hacer en un borrador muchas partidas nuestra grafica es
 simple pero divertido
 jugador vs jugador 
 vs cpu
+
+
+mapa del juego
+
+portal inicio con introduccion /inicio.html
+pagina del juego con pop up del resultado /tictactoe.html
