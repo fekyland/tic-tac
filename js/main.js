@@ -8,7 +8,7 @@ let jugador2  = "jugador 2"
 
 
 const playerClick = (ev)=> {                //se inicia la funcion que inicia el evento
-   // console.log(ev.target.innerHtml)      // on click  escucha cuando el raton hace click en este caso esta 
+                                            // on click  escucha cuando el raton hace click en este caso esta 
 
     let ticTac = ev.target                  //
     let boxValue = ev.target.innerHTML      //valor dentro del html
@@ -63,14 +63,29 @@ const playerClick = (ev)=> {                //se inicia la funcion que inicia el
          
     
         if (xGanador){  
-            console.log("ganador es 🍌" + jugador1)
-            document.getElementById("textoResultado").innerHTML="el ganador es " 
-            document.getElementById("resultadoNombre").innerHTML= jugador1
+          document.getElementById("ganadorX").innerHTML="el ganador es " + jugador1
+          document.getElementById("imprimeFuera").innerHTML="📷 imprimir"
+          document.getElementById("iniciar").innerHTML="📍iniciar"
+          var a = document.getElementById("ganadorX");
+          var b = document.getElementById("imprimeFuera");
+          var c = document.getElementById("iniciar");
+          a.style.display = "block";
+          b.style.display = "block";
+          c.style.display = "block";
+
         }
         else if (oGanador){
-            console.log("ganador es 🥝" + jugador2)
-            document.getElementById("textoResultado").innerHTML="el ganador es "
-            document.getElementById("resultadoNombre").innerHTML= jugador2
+            console.log("ganador es ⭕" + jugador2)
+            document.getElementById("ganadorO").innerHTML="el ganador es " + jugador2
+            document.getElementById("imprimeFuera").innerHTML="📷 imprimir"
+            document.getElementById("iniciar").innerHTML="📍iniciar"
+            var x = document.getElementById("ganadorO");
+            var y = document.getElementById("imprimeFuera");
+            var z = document.getElementById("iniciar");
+            x.style.display = "block";
+            y.style.display = "block";
+            z.style.display = "block";
+            
         }else if(
             !xGanador && !oGanador &&
             boxValue1 !== "" &&
@@ -83,8 +98,17 @@ const playerClick = (ev)=> {                //se inicia la funcion que inicia el
             boxValue8 !== "" &&
             boxValue9 !== ""
             ){
-              document.getElementById("textoResultado").innerHTML="el resultado"
-              document.getElementById("resultadoNombre").innerHTML= "empate"
+              document.getElementById("empate").innerHTML="empate"
+              document.getElementById("imprimeFuera").innerHTML="📷 imprimir"
+              document.getElementById("iniciar").innerHTML="📍iniciar"
+              var f = document.getElementById("empate")
+              var e = document.getElementById("imprimeFuera");
+              var d = document.getElementById("iniciar");
+              f.style.display = "block";
+              e.style.display = "block";
+              d.style.display = "block";
+             
+      
             }
            
 
@@ -95,24 +119,22 @@ const playerClick = (ev)=> {                //se inicia la funcion que inicia el
         
     }
 
+
     function iniciarJuego() {
         // document.getElementsByClassName("ticTac").innerHTML = ""
         location.reload()
         console.log("wowww")
     }
 
-
     function handleOnChange(event){
                
-          if(event.target.name === "jugador1"){ //visualizo e identifico los jugadores escritos en el cuadrado
+          if(event.target.name === "jugador1"){ //visualizo e identifico los jugadores escritos en el cuadrado name att de text
             jugador1  = event.target.value;
           }else{
             jugador2  = event.target.value;
           }
     }
-
-        
-
+    
     function imprimir() {
         window.print();
          }
