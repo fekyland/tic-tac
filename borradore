@@ -1,0 +1,21 @@
+
+function verificarTab(tablero , index ){
+    index++
+    console.log(index + tablero);
+
+
+}
+verificarTab()
+verificarTab()
+
+
+const empateEstatus = tablero.map(item => {
+    for (let i = 0 ; i < tablero.length ; i++ ){
+     if (item === "") {
+         return
+     }else if (i === 9){
+         console.log("empate")
+
+     }
+    } 
+ })
