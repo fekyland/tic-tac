@@ -2,12 +2,12 @@ body{
     font-family: 'Permanent Marker', cursive;
     margin-top: 0px;
     margin-left: 0px;
-    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    background-image: url(https://fekyland.github.io/ticac/img/wp8984736-tic-tac-toe-wallpapers.jpg);
 
 }
 .indexWall{
 
-    background-image: url(/img/wp8984729-tic-tac-toe-wallpapers.jpg);
+    background-image: url(https://fekyland.github.io/tic-tac/img/wp8984729-tic-tac-toe-wallpapers.jpg);
 
 }
 #boton {
@@ -106,7 +106,7 @@ body{
 .cuerpo {
     display: grid;
     justify-content: center;
-    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    background-image: url(https://fekyland.github.io/tic-tac/img/wp8984736-tic-tac-toe-wallpapers.jpg);
     color: aliceblue;
   
     
@@ -339,7 +339,7 @@ body{
 .cuerpo {
     display: grid;
     justify-content: center;
-    background-image: url(/img/wp8984736-tic-tac-toe-wallpapers.jpg);
+    background-image: url(https://fekyland.github.io/tic-tac/img/wp8984736-tic-tac-toe-wallpapers.jpg);
     color: rgb(0, 0, 0);
     height: 100vh;
     font-size: 50px;
@@ -557,4 +557,5 @@ body{
     z-index: 3;
     height: 250px;
     border-radius: 20px;
+}
 }
