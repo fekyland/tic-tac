@@ -19,4 +19,4 @@ pagina del juego con pop up del resultado /tictactoe.html
 y empieza el juego!
 ve al siguiente link;
 
-https://fekyland.github.io/tic-tac/tictactoe.html
+https://fekyland.github.io/tic-tac/
