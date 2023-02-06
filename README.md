@@ -1,15 +1,15 @@
-bienvenidos a tic tac toe by FEKGAMING
+Bienvenid@s a tic tac toe by FEKGAMING
 
-basado en tecnologias HTML5,GRID Y JAVASCRIPT
-  contenedores grid para ser responsive que lo puedas ver en tu movil,tablet, a computador
+Basado en tecnologias HTML5,GRID Y JAVASCRIPT
+Contenedores grid para ser responsive que lo puedas ver en tu movil,tablet, a computador
   
   
 
 Recuerda esa simpleza de hacer en un borrador muchas partidas! Nuestra grafica es una mas para jugar muchas mas sin tener que gastar papel
-simple pero muy divertido!
-jugador vs jugador 
+Simple pero muy divertido!
+Jugador vs jugador 
 
-mapa del juego
+Mapa del juego
 
 portal inicio con introduccion /inicio.html
 pagina del juego con pop up del resultado /tictactoe.html
