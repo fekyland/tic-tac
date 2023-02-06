@@ -5,9 +5,10 @@ Contenedores grid para ser responsive que lo puedas ver en tu movil,tablet, a co
   
   
 
-Recuerda esa simpleza de hacer en un borrador muchas partidas! Nuestra grafica es una mas para jugar muchas mas sin tener que gastar papel
+Recuerda esa simpleza de hacer en un borrador muchas partidas! Nuestra grafica es una mas para jugar muchas mas!!
 Simple pero muy divertido!
 Jugador vs jugador 
+Imprime tu partida!! (Boton print)
 
 Mapa del juego
 
